@@ -9,8 +9,8 @@ These scripts are used for keep windows 11 alive while serving the content to re
 
 ### Requirement
 
-- SFTPGo installed
-- PowerShell installed (should shipped with Windows
+- [SFTPGo](https://sftpgo.com/) installed
+- PowerShell installed (should shipped with Windows)
 
 ### Installation
 1. Copy the scripts to your harddrive (eg: d:\code\SFTPGo_Prevent_Sleep\)
@@ -22,10 +22,12 @@ These scripts are used for keep windows 11 alive while serving the content to re
 3. Setup SFTPGo Event rules in SFTPGo WebAdmin -> Event Manager -> Event rules.   
 
 	3.1: Setup an event triggered when serving the contents (aka. Fs events download), actions link to SET_stream_flag as shown in step 2.
+      	![image](Screenshot_SFTPGo_WebAdmin_rule1.png)
+   	![image](Screenshot_SFTPGo_WebAdmin_rule1.png)
    
 	3.2: Setup an event scheduled (per hour), executing the corresponding action (Check_flag_and_Prevent_sleep).
 
-4. The minimum schedule interval of SFTPGo is 1 hour. so it is better to make the Windows idle time (before entering the sleep/standby) larger then 1 hour.
+5. The minimum schedule interval of SFTPGo is 1 hour. so it is better to make the Windows idle time (before entering the sleep/standby) larger then 1 hour.
 
 ### Debug
 If everything goes well, you shall find:
