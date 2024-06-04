@@ -23,7 +23,7 @@ These scripts are used for keep windows 11 alive while serving the content to re
 
 	3.1: Setup an event triggered when serving the contents (aka. Fs events download), actions link to SET_stream_flag as shown in step 2.
       	![image](Screenshot_SFTPGo_WebAdmin_rule1.png)
-   	![image](Screenshot_SFTPGo_WebAdmin_rule1.png)
+   	![image](Screenshot_SFTPGo_WebAdmin_rule2.png)
    
 	3.2: Setup an event scheduled (per hour), executing the corresponding action (Check_flag_and_Prevent_sleep).
 
