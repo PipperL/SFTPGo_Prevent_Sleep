@@ -18,7 +18,7 @@ These scripts are used for keep windows 11 alive while serving the content to re
 
 
 
-> **Note**: After 2.6.3, the command option is disable by default in Event action list.
+> **Note**: After 2.6.3, the command option is disabled by default in Event action list. [Detail Info](https://github.com/drakkan/sftpgo/security/advisories/GHSA-49cc-xrjf-9qf7)
 > 
 > You must enable it in the configuration file (ie. c:\ProgramData\SFTPGo\sftpgo.json).
 > 
@@ -67,9 +67,12 @@ These scripts are used for keep windows 11 alive while serving the content to re
 
 
 	3.2: Setup an event  in Windows Task Scheduler (工作排程器) , executing the corresponding action (Check_flag_and_Prevent_sleep) per hour.
-   
+   	![image](Screenshot_SFTPGo_Windows_Task_Scheduler1.png)
+   	![image](Screenshot_SFTPGo_Windows_Task_Scheduler2.png)
 
 3. The minimum schedule interval of SFTPGo is 1 hour. so it is better to make the Windows idle time (before entering the sleep/standby) larger then 1 hour.
+
+---
 
 ### Debug
 If everything goes well, you shall find:
@@ -87,6 +90,8 @@ powershell Check_timestamp.ps1
 ```
 powercfg /sleepstudy
 ```
+
+---
 
 ### References:
 The tool is my first Powershell script and inspired by the following howtos:
